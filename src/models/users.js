@@ -17,7 +17,7 @@ const model = {
   effects: (dispatch) => ({
     async load() {
       const users = await fetch(
-        "https://jsonplaceholder.typicode.com/posts"
+        "https://jsonplaceholder.typicode.com/users"
       ).then((response) => response.json());
       dispatch.users.loaded(users);
     },
